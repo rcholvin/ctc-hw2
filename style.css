@@ -85,11 +85,11 @@ img {
   width: 80px;
   position: absolute;
   top: 55px;
-  -webkit-animation-name: spin;
+  /*-webkit-animation-name: spin;*/
   -webkit-animation-duration: 2s;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
-  -webkit-animation-play-state: paused; 
+  -webkit-animation-play-state: paused;
   /* -play-state might be useful to change */
 }
 
@@ -100,6 +100,7 @@ img {
 .spincar #wheel2 {
   left: 365px;
 }
+
 
 @-webkit-keyframes drive {
   from {
@@ -116,6 +117,7 @@ img {
   }
   to {
     /* fill me out */
+    -webkit-transform:rotate(360deg);
   }
 }
 
